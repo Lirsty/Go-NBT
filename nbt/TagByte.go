@@ -13,3 +13,10 @@ func NewTagByte(key string, value byte) *TagByte {
 	t.Value = value
 	return t
 }
+
+func (t *TagByte) toBytes() *[]byte {
+	var (
+		result []byte
+	)
+	return &result
+}
